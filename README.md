@@ -5,9 +5,9 @@ Sketchs hechos en processing (www.processing.org)
 ## Qué hay en este repositorio?
 
 Cada carpeta contiene:
--El código del sketch (a veces más de un archivo).
--Una imagen preview.jpg para saber de qué sketch se trata.
--Un archivo README.txt con una breve descripción del sketch.
+.El código del sketch (a veces más de un archivo).
+.Una imagen preview.jpg para saber de qué sketch se trata.
+.Un archivo README.txt con una breve descripción del sketch.
 
 ## Cómo veo los dibujitos si no entiendo nada?
 
