@@ -13,8 +13,8 @@ void setup()
   stroke(250, 10);
   strokeWeight(1);
   
-  pang = 0.12;
-  nang = -0.12;
+  pang = 0.1;
+  nang = -0.1;
   
   background(30);
   translate(width/2, height/2+100);
@@ -31,7 +31,7 @@ void draw()
 
 void mousePressed()
 {
-  saveFrame("collatz.jpg");
+  saveFrame("preview.jpg");
 }
 
 void drawLine(int val)

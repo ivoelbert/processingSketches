@@ -107,5 +107,5 @@ void draw()
 
 void mousePressed()
 {
-  saveFrame("frame.jpg");
+  saveFrame("preview.jpg");
 }

@@ -1,0 +1,1 @@
+Lineas verticales y horizontales formando una especie de tela. Moviendo el mouse se puede rotar la tela (con respecto al eje Y) para ver cómo se entrecruzan las lineas.

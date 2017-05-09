@@ -64,8 +64,8 @@ void setup()
   size(800, 800, P3D);
   smooth(8);
   frameRate(30);
-  c1 = color(#93101B);
-  c2 = color(#8EEDE6);
+  c1 = color(#FC4747);
+  c2 = color(#BC0909);
   generarDatos(3, cant, 1);
 }
 
@@ -104,4 +104,9 @@ void mostrarPuntos()
     point(0, 0, 0);
     popMatrix();
   }
+}
+
+void mousePressed()
+{
+  saveFrame("preview.jpg");
 }

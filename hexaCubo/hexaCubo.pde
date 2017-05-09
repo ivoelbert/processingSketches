@@ -97,9 +97,10 @@ void draw()
   t2.mostrar();
   t3.mostrar();
   
-  
+  /*
   if(frameCount < 120)
     saveFrame("hexacubo####.jpg");
+  */
   
 }
 
@@ -191,4 +192,9 @@ float growAng(float x, float a1, float a2)
   }
   
   return ret;
+}
+
+void mousePressed()
+{
+  saveFrame("preview.jpg");
 }

@@ -70,8 +70,10 @@ void draw()
   
   animarH();
   mostrarH();
+  /*
   if(frameCount <= 120)
     saveFrame("hex####.jpg");
+  */
 }
 
 void animarH()
@@ -129,4 +131,9 @@ void createH()
     
     h[x][y] = new hexaLinea(lado, lado, px, py);
   }
+}
+
+void mousePressed()
+{
+  saveFrame("preview.jpg");
 }

@@ -1,0 +1,1 @@
+Puntos que orbitan el centro de la imagen. Es una animación.

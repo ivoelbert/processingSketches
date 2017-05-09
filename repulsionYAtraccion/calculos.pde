@@ -2,8 +2,8 @@
 void actualizarCentro()
 {
   centroAng += centroV;
-  float x = centroRad * cos(centroAng);
-  float y = centroRad * sin(centroAng);
+  float x = centroRad * cos(centroAng) + width/2;
+  float y = centroRad * sin(centroAng) + height/2;
   
   centro.set(x, y);
   

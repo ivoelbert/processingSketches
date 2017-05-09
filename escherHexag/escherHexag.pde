@@ -37,3 +37,8 @@ void drawGrid()
   drawHexags();
   drawPuntas();
 }
+
+void mousePressed()
+{
+  saveFrame("preview.jpg");
+}

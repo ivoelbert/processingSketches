@@ -1,0 +1,1 @@
+Un cubo que se "ahueca" en uno de sus vértices para dar lugar a otro cubo. Es una animación.

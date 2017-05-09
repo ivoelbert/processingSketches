@@ -24,3 +24,8 @@ void draw()
   drawPlane();
   drawPlanet();
 }
+
+void mousePressed()
+{
+  saveFrame("preview.jpg");
+}

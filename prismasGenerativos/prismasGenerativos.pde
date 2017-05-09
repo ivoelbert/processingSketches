@@ -59,3 +59,13 @@ void setup()
   exit();
   */
 }
+
+void draw()
+{
+  
+}
+
+void mousePressed()
+{
+  saveFrame("preview.jpg");
+}

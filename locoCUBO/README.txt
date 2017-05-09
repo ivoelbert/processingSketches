@@ -1,0 +1,1 @@
+Un octaedro se desarma para dar lugar a un cubo. El octaedro está formado "pegando" una pirámide cuyas caras son triángulos equiláteros a cada cara del cubo interno. Es una animación.

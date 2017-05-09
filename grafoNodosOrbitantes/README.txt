@@ -1,0 +1,1 @@
+Un cubo cuyos vértices se mueven sobre las lineas de círculos tangentes entre sí. Es una animación, aunque solo los primeros frames.

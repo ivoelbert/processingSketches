@@ -1,0 +1,1 @@
+Visualización de la conjetura de Collatz. Todas las ramas (números del 1 al 10000) convergen a la raiz (1).

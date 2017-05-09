@@ -53,11 +53,12 @@ void draw()
   
   ang += vang;
   
-  
+  /*
   if(ang > -PI)
   {
     saveFrame("sndScroll####.jpg");
   }
+  */
   
 }
 
@@ -128,4 +129,9 @@ int next(int x)
   if(x < cant - 1)
     ret = x + 1;
   return ret;
+}
+
+void mousePressed()
+{
+  saveFrame("preview.jpg");
 }

@@ -44,3 +44,8 @@ void draw()
   calcularRotacion();
   mostrarParticulas();
 }
+
+void mousePressed()
+{
+  saveFrame("preview.jpg");
+}

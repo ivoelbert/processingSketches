@@ -1,0 +1,1 @@
+Una curva de Peano. Como la curva de Hilbert, ésta también es una linea continua que cubre el plano. Cabe aclarar que es solo una iteración del proceso que crea la *verdadera* curva. Es una animación, LENTÍSIMA, prefiero la imagen estática.

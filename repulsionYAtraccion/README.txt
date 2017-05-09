@@ -1,0 +1,1 @@
+Un círculo orbitando el centro. La animación está hecha en base a "cartas" cuadradas. Cada carta tiene un lado rojo y uno amarillo y rota lo necesario en cada momento para dar la ilusión del circulo moviendose. Valga la redundancia: es una animación.

@@ -148,6 +148,14 @@ void draw()
   background(20);
   
   drawCurve(p.size());
+  
+  /*
   if(frameCount < 90)
     saveFrame("asi####.jpg");
+  */
+}
+
+void mousePressed()
+{
+  saveFrame("preview.jpg");
 }

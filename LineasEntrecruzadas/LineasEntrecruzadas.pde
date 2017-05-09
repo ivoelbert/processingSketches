@@ -51,3 +51,8 @@ void draw()
     saveFrame("telar####.jpg");
   */
 }
+
+void mousePressed()
+{
+  saveFrame("preview.jpg");
+}

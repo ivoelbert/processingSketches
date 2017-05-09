@@ -48,3 +48,8 @@ void createGirones()
     g[i][j] = new giron(x, y, gSz);
   }
 }
+
+void mousePressed()
+{
+  saveFrame("preview.jpg");
+}

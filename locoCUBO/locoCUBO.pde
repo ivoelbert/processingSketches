@@ -218,3 +218,8 @@ float wave(float x)
   
   return ret;
 }
+
+void mousePressed()
+{
+  saveFrame("preview.jpg");
+}

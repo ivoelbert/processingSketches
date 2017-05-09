@@ -1,4 +1,4 @@
-static int cant = 1000;
+static int cant = 100000;
 
 PVector[] p;
 PImage img;
@@ -57,4 +57,9 @@ void drawDots()
   {
     point(p[i].x, p[i].y);
   }
+}
+
+void mousePressed()
+{
+  saveFrame("preview.jpg");
 }

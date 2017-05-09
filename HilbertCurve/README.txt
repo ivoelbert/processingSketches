@@ -1,0 +1,1 @@
+Una curva de Hilbert. Es básicamente una linea continua que cubre todo el plano. Teóricamente esta no es la curva de Hilbert *real* porque no cubre todo el plano, pero es una iteración del proceso que permite crear la *verdadera*. Es una animación.

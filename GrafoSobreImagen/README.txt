@@ -1,0 +1,1 @@
+A partir de una imagen base (img.jpg) genera 100000 puntos al azar, la probabilidad de que un punto caiga en cierta posición depende del brillo de la imagen en la misma.

@@ -144,3 +144,8 @@ void draw()
   if(h < p.size() - 1)
     h += vel;
 }
+
+void mousePressed()
+{
+  saveFrame("preview.jpg");
+}

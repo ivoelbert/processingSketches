@@ -20,9 +20,10 @@ void draw()
   translate(width/2, height/2);
   drawCirc(rad, 0);
   
+  /*
   if(frameCount < animationFrames)
     saveFrame("circ####.jpg");
-    
+  */
 }
 
 void drawCirc(float r, int it)
@@ -68,4 +69,9 @@ void drawChild(float r, float a, float p, int c)
     drawCirc(r, c + 1);
     popMatrix();
   }
+}
+
+void mousePressed()
+{
+  saveFrame("preview.jpg");
 }

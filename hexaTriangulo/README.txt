@@ -1,0 +1,1 @@
+Una grilla de hexágonos se transforma en una de triángulos y viceversa. Es una animación.

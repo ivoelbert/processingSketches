@@ -1,0 +1,1 @@
+un avion que sobrevuela un planeta chiquito. El mouse lo mueve.
