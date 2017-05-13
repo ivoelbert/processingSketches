@@ -131,10 +131,7 @@ void drawCurve(int hasta)
     stroke(c);
     PVector v = p.get(i);
     
-    float nx = map(noise(frameCount*0.1, i, 0), 0, 1, -3, 3);
-    float ny = map(noise(frameCount*0.1, i, 1), 0, 1, -3, 3);
-    
-    curveVertex(v.x + nx, v.y + ny);
+    curveVertex(v.x, v.y);
   }
   
   PVector last = p.get(hasta-1);
