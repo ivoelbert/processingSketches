@@ -41,7 +41,7 @@ void draw()
     float cy = (i * lado) + (j * lado/2);
     float cz = (i * lado/2) - (j * lado/2);
     
-    float offset = map(sqrt(cx*cx + cy*cy + cz*cz), 0, width, 0, 10);
+    float offset = map(sqrt(cx*cx + cy*cy + cz*cz), 0, width, 0, 15);
     
     pushMatrix();
     translate(cx, cy, cz);
