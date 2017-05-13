@@ -1,1 +1,1 @@
-Un patrón hecho con cubos escalonados. La proyección de los cubos forma figuras que se repiten formando una teselación. la idea es hacer una animación con eso, todavía no se me ocurre qué.
+Un patrón hecho con cubos escalonados. La proyección de los cubos forma figuras que se repiten formando una teselación. Es una animación. 

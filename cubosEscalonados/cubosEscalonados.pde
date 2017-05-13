@@ -1,20 +1,22 @@
 
-static float lado = 100;
+static float lado = 81;
 static int cols = 15;
 static int rows = 15;
 
-color cc;
+color ca, cf, ci;
 
 boolean[][] tra;
 
 void setup()
 {
-  size(800, 800, P3D);
+  size(600, 600, P3D);
   smooth(8);
   frameRate(30);
   ortho();
   
-  cc = color(#FFE2A2);
+  ca = color(#70ABAF);
+  cf = color(#32292F);
+  ci = color(#705D56);
   noStroke();
   
   tra = new boolean[rows][cols];
@@ -30,8 +32,8 @@ void draw()
   background(20);
   translate(0, -width/2, -width);
   rotateY(-QUARTER_PI);
-  PVector v = new PVector(1, 0, -1);
-  rotateOver(v, radians(-35.3));
+  PVector v1 = new PVector(1, 0, -1);
+  rotateOver(v1, radians(-35.3));
   for(int i = 0; i < rows; i++)
   for(int j = 0; j < cols; j++)
   { 
@@ -39,14 +41,39 @@ void draw()
     float cy = (i * lado) + (j * lado/2);
     float cz = (i * lado/2) - (j * lado/2);
     
+    float offset = map(sqrt(cx*cx + cy*cy + cz*cz), 0, width, 0, 10);
+    
     pushMatrix();
     translate(cx, cy, cz);
-    caja(lado, cc, tra[i][j]);
+    PVector v = new PVector(1, -1, 1);
+    float ang = map(sinFlash(frameCount * 0.4 + offset), -1, 1, 0, radians(30));
+    rotateOver(v, ang);
+    caja(lado, tra[i][j]);
     popMatrix();
   }
 }
 
-void caja(float l, color c, boolean t)
+float sinFlash(float dx)
+{
+  float x = dx;
+  while(x > 6*PI)
+    x -= 6*PI;
+  float ret = 0;
+  if(x < HALF_PI)
+    ret = sin(x);
+  else if(x < 2.5*PI)
+    ret = 1;
+  else if(x < 3.5*PI)
+    ret = sin(x);
+  else if(x < 5.5*PI)
+    ret = -1;
+  else if(x < 6*PI)
+    ret = sin(x);
+    
+  return ret;
+}
+
+void caja(float l, boolean t)
 {
   float dx = l / 2;
   float dy = l / 2;
@@ -62,7 +89,7 @@ void caja(float l, color c, boolean t)
   }
   //cara arriba
   if(!t)
-    fill(lerpColor(c, color(0), 0));
+    fill(ca);
   beginShape();
   vertex(-dx, -dy, dz);
   vertex(dx, -dy, dz);
@@ -72,7 +99,7 @@ void caja(float l, color c, boolean t)
   
   //cara abajo
   if(!t)
-    fill(lerpColor(c, color(0), 0));
+    fill(ca);
   beginShape();
   vertex(-dx, dy, dz);
   vertex(dx, dy, dz);
@@ -82,7 +109,7 @@ void caja(float l, color c, boolean t)
   
   //cara frente
   if(!t)
-    fill(lerpColor(c, color(0), 0.33));
+    fill(cf);
   beginShape();
   vertex(-dx, dy, -dz);
   vertex(dx, dy, -dz);
@@ -92,7 +119,7 @@ void caja(float l, color c, boolean t)
   
   //cara atras
   if(!t)
-    fill(lerpColor(c, color(0), 0.33));
+    fill(cf);
   beginShape();
   vertex(-dx, dy, dz);
   vertex(dx, dy, dz);
@@ -102,7 +129,7 @@ void caja(float l, color c, boolean t)
   
   //cara derecha
   if(!t)
-    fill(lerpColor(c, color(0), 0.66));
+    fill(ci);
   beginShape();
   vertex(dx, dy, dz);
   vertex(dx, dy, -dz);
@@ -112,7 +139,7 @@ void caja(float l, color c, boolean t)
   
   //cara izquierda
   if(!t)
-    fill(lerpColor(c, color(0), 0.66));
+    fill(ci);
   beginShape();
   vertex(-dx, dy, dz);
   vertex(-dx, dy, -dz);
