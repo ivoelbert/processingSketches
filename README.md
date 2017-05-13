@@ -22,4 +22,4 @@ Se mezclan con las otras cosas que subo, pero bueno.
 
 ## Cómo hago eso? Me enseñás?
 
-Sí.
+No

@@ -14,9 +14,9 @@ void setup()
   frameRate(30);
   ortho();
   
-  ca = color(#70ABAF);
-  cf = color(#32292F);
-  ci = color(#705D56);
+  ca = color(#E6AA68);
+  cf = color(#CA3C25);
+  ci = color(#1D1A05);
   noStroke();
   
   tra = new boolean[rows][cols];
@@ -41,16 +41,22 @@ void draw()
     float cy = (i * lado) + (j * lado/2);
     float cz = (i * lado/2) - (j * lado/2);
     
-    float offset = map(sqrt(cx*cx + cy*cy + cz*cz), 0, width, 0, 15);
+    float offset = map(sqrt((cx-0.72*width)*(cx-0.72*width) + (cy-0.85*width)*(cy-0.85*width) + cz*cz), 0, width, 0, 10);
     
     pushMatrix();
     translate(cx, cy, cz);
     PVector v = new PVector(1, -1, 1);
-    float ang = map(sinFlash(frameCount * 0.4 + offset), -1, 1, 0, radians(30));
+    float ang = map(sinFlash(frameCount * 0.2 + offset), -1, 1, 0, radians(30));
     rotateOver(v, ang);
     caja(lado, tra[i][j]);
     popMatrix();
   }
+  
+  /*
+  if(frameCount * 0.2 < 6*PI)
+    saveFrame("escal####.jpg");
+    */
+    
 }
 
 float sinFlash(float dx)
