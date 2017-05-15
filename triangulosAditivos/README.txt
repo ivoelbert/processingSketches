@@ -1,0 +1,1 @@
+Triángulos de luz roja, verde y azul. Cuando se superponen forman un triángulo blanco. Es una animación.
